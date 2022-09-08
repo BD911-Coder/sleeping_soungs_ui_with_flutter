@@ -14,6 +14,7 @@ class CustomText extends StatelessWidget {
       case TextPlace.title:
         return Text(
           _textContent,
+          style: Theme.of(context).textTheme.headline4,
         );
       case TextPlace.subtitle:
         return Text(
@@ -23,12 +24,18 @@ class CustomText extends StatelessWidget {
       case TextPlace.text:
         return Text(
           _textContent,
-          style: Theme.of(context).textTheme.bodyLarge,
+          style: Theme.of(context).textTheme.headline6?.copyWith(fontSize: 20),
         );
       case TextPlace.subtext:
-        return Text(_textContent);
+        return Text(
+          _textContent,
+          style: Theme.of(context).textTheme.bodyMedium,
+        );
       default:
-        return Text(_textContent);
+        return Text(
+          _textContent,
+          style: Theme.of(context).textTheme.bodyLarge,
+        );
     }
   }
 }
