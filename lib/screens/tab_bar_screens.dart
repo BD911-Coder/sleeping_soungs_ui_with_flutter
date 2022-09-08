@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vb10/screens/composer_screen.dart';
 import 'package:vb10/screens/discover_screen.dart';
 import 'package:vb10/screens/profile_screen.dart';
+import 'package:vb10/screens/widgets/custom_text_widget.dart';
 
 class TabBarScreen extends StatefulWidget {
   const TabBarScreen({Key? key}) : super(key: key);
@@ -29,10 +30,8 @@ class _TabBarScreenState extends State<TabBarScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Sleepy',
-          style: TextStyle(fontSize: 40),
-        ),
+        title:
+            const CustomText(textPlace: TextPlace.title, textContent: 'Sleepy'),
         backgroundColor: Theme.of(context).backgroundColor,
         centerTitle: false,
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vb10/screens/widgets/custom_text_widget.dart';
 
 class DiscoverScreen extends StatelessWidget {
   const DiscoverScreen({Key? key}) : super(key: key);
@@ -8,8 +9,12 @@ class DiscoverScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: Center(
-          child: Text('Discover Screen'),
-        ),
+            child: Column(
+          children: const [
+            CustomText(
+                textPlace: TextPlace.text, textContent: 'Hello Solid and DRY')
+          ],
+        )),
       ),
     );
   }
