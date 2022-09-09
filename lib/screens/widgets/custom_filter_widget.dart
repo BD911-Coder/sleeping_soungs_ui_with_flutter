@@ -11,12 +11,15 @@ class CustomFilter extends StatelessWidget {
             style: ElevatedButton.styleFrom(shape: const StadiumBorder()),
             onPressed: () {},
             icon: const Icon(Icons.apps),
-            label: Text(
-              'All',
-              style: Theme.of(context)
-                  .textTheme
-                  .button
-                  ?.copyWith(fontWeight: FontWeight.bold),
+            label: Padding(
+              padding: const EdgeInsets.only(top: 2),
+              child: Text(
+                'All',
+                style: Theme.of(context)
+                    .textTheme
+                    .button
+                    ?.copyWith(fontWeight: FontWeight.bold),
+              ),
             ))
       ],
     );
