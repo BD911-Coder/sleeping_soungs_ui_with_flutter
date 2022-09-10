@@ -1,14 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:vb10/screens/widgets/custom_filter_widget.dart';
+import 'package:vb10/screens/widgets/custom_indicator.dart';
+import 'package:vb10/screens/widgets/custom_list_tile.dart';
 
 class DiscoverScreen extends StatelessWidget {
   const DiscoverScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: CustomFilter(),
+        child: Column(
+          children: const [
+            CustomIndicator(customIndicator: CustomIndicators.linearIndicator),
+            SizedBox(
+              height: 10,
+            ),
+            CustomListTile(),
+          ],
+        ),
       ),
     );
   }

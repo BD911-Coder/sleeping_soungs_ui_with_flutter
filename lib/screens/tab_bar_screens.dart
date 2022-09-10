@@ -31,7 +31,11 @@ class _TabBarScreenState extends State<TabBarScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: const [CustomIndicator()],
+        actions: const [
+          CustomIndicator(
+            customIndicator: CustomIndicators.circularIndicator,
+          )
+        ],
         title:
             const CustomText(textPlace: TextPlace.title, textContent: 'Sleepy'),
         backgroundColor: Theme.of(context).backgroundColor,
