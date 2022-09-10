@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vb10/screens/widgets/custom_indicator.dart';
-import 'package:vb10/screens/widgets/custom_list_tile.dart';
+import 'package:vb10/screens/widgets/icons_with_sizedbox.dart';
 
 class DiscoverScreen extends StatelessWidget {
   const DiscoverScreen({Key? key}) : super(key: key);
@@ -10,12 +9,19 @@ class DiscoverScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
-          children: const [
-            CustomIndicator(customIndicator: CustomIndicators.linearIndicator),
-            SizedBox(
+          children: [
+            const SizedBox(
               height: 10,
             ),
-            CustomListTile(),
+            ListTile(
+              title: const Text('Hello World'),
+              onTap: () {},
+              subtitle: const Text('Hello Subtitle'),
+              leading: const IconsWithSizedBox(customIcon: Icons.add),
+              trailing: const SizedBox(
+                child: IconsWithSizedBox(customIcon: Icons.help),
+              ),
+            )
           ],
         ),
       ),

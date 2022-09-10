@@ -8,10 +8,12 @@ class CustomListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: const ListTile(
-        title: Center(
-            child: CustomText(
-                textPlace: TextPlace.text, textContent: 'Hello World!')),
+      body: ListTile(
+        title: const Text('Hello World'),
+        onTap: () {},
+        subtitle: const Text('Hello Subtitle'),
+        leading: const Icon(Icons.add),
+        trailing: const Icon(Icons.forest),
       ),
     );
   }

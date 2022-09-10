@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:vb10/screens/composer_screen.dart';
 import 'package:vb10/screens/discover_screen.dart';
 import 'package:vb10/screens/profile_screen.dart';
-import 'package:vb10/screens/widgets/custom_indicator.dart';
 import 'package:vb10/screens/widgets/custom_text_widget.dart';
 
 class TabBarScreen extends StatefulWidget {
@@ -31,11 +30,6 @@ class _TabBarScreenState extends State<TabBarScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: const [
-          CustomIndicator(
-            customIndicator: CustomIndicators.circularIndicator,
-          )
-        ],
         title:
             const CustomText(textPlace: TextPlace.title, textContent: 'Sleepy'),
         backgroundColor: Theme.of(context).backgroundColor,
