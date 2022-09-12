@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vb10/screens/widgets/icons_with_sizedbox.dart';
+import 'package:vb10/widgets/icons_with_sizedbox.dart';
 
 class DiscoverScreen extends StatelessWidget {
   const DiscoverScreen({Key? key}) : super(key: key);

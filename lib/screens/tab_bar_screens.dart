@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vb10/screens/composer_screen.dart';
 import 'package:vb10/screens/discover_screen.dart';
 import 'package:vb10/screens/profile_screen.dart';
-import 'package:vb10/screens/widgets/custom_text_widget.dart';
+import 'package:vb10/widgets/custom_text_widget.dart';
 
 class TabBarScreen extends StatefulWidget {
   const TabBarScreen({Key? key}) : super(key: key);

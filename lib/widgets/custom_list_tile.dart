@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vb10/screens/widgets/custom_text_widget.dart';
+import 'package:vb10/widgets/custom_text_widget.dart';
 
 class CustomListTile extends StatelessWidget {
   const CustomListTile({Key? key}) : super(key: key);
